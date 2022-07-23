@@ -1,0 +1,27 @@
+.container{
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.btn{
+    position: absolute;
+}
+#btn-2{
+    bottom: 0;
+    right: 0;
+}
+#element{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    right: 50%;
+    top:50%;
+}
+.btn.disappear, #element.disappear{
+    animation: disappear 1s forwards;
+}
+@keyframes disappear {
+    from {opacity: 0;}
+    to {opacity: 1};
+}
